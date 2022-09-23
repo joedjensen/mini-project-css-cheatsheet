@@ -63,7 +63,7 @@
     border-radius: 5px;
     background: linear-gradient(var(--fade-start), var(--fade-end));
     margin:3px;
-    padding: 3px;
+    padding: 10px;
     -webkit-user-select: all;
     -ms-user-select: all;
     user-select: all;
@@ -73,7 +73,7 @@
     border-style: dashed;
     border-color: var(--text-color);
     border-width: 1px;
-    width: 25%;
+    width: 30%;
     padding: 10px;
     margin: 1%;
     color: var(--alternate-color);
