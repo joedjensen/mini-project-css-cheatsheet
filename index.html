@@ -21,34 +21,84 @@
         <!-- Product Cards -->
         <div class="products">
           <section class="card">
-            <header>Camera</header>
-            <img src="./assets/images/camera.jpg" alt="camera" />
-            <p>Price: $300</p>
+            <h2>Flexbox Row</h2>
+            <p>Use these three properties to create a Flexbox row layout.</p>
+            <section class="inner-card">
+              <pre>
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}</pre>
+            </section>
           </section>
           <section class="card">
-            <header>Tablet</header>
-            <img src="./assets/images/tablet.jpg" alt="tablet" />
-            <p>Price: $150</p>
-          </section>
+            <h2>Flexbox Column</h2>
+            <p>Use this to create a Flexbox column layout.</p>
+            <section class="inner-card">
+              <pre>
+.column {
+  display: flex;
+  flex-direction: column;
+}</pre>
+  </section>
+</section>
           <section class="card">
-            <header>Toilet Paper</header>
-            <img src="./assets/images/toilet-paper.jpg" alt="toilet paper" />
-            <p>Price: $30</p>
-          </section>
+            <h2>CSS Grid Layout</h2>
+            <p>Build a 12 column layout using CSS.</p>
+            <section class="inner-card">
+              <pre>
+.grid {
+  display: grid;
+  width: 100%
+  grid-template-columns:
+repeat(12, 1fr);
+}</pre>
+  </section>
+</section>
           <section class="card">
-            <header>Wooden Spoons</header>
-            <img src="./assets/images/wooden-spoons.jpg" alt="wooden spoons" />
-            <p>Price: $10</p>
-          </section>
+            <h2>Linear Gradients</h2>
+            <p>This will create a background linear gradient from top to bottom.</p>
+            <section class="inner-card">
+              <pre>
+.linear-gradient-background {
+  background-image: linear-
+gradient(
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%
+  );
+}</pre>
+  </section>
+</section>
           <section class="card">
-            <header>Wooden Spoons</header>
-            <img src="./assets/images/wooden-spoons.jpg" alt="wooden spoons" />
-            <p>Price: $10</p>
-          </section>
+            <h2>Box Transition Glow</h2>
+            <p>Use transition and box shadows to glow on hover.</p>
+            <section class="inner-card">
+              <pre>
+.code-card .card-header {
+  border-radius: 8px;
+  transition: all 0.5s ease-in-
+out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px
+rgba(232, 102, 236, 1), 0 0 15px
+rgba(232, 102, 236, 1);
+}
+</pre>
+  </section>
+</section>
           <section class="card">
-            <header>Wooden Spoons</header>
-            <img src="./assets/images/wooden-spoons.jpg" alt="wooden spoons" />
-            <p>Price: $10</p>
+            <h2>Overlay Card with Title</h2>
+            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <section class="inner-card">
+              <pre>
+.card-header {
+  position: relative;
+  margin-top: -20px;
+}</pre>
           </section>
         </div>
       </main>
@@ -56,8 +106,7 @@
       <!-- Footer -->
       <footer>
         <h3>
-          Open Chrome DevTools --> Toggle device toolbar --> Resize the browser
-          window!
+         Made with &#x2764; and CSS
         </h3>
       </footer>
     </body>

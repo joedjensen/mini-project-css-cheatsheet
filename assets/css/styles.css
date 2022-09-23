@@ -1,6 +1,7 @@
 :root {
-    --header-backgroud: #13293d;
-    --alternate-color:  white;
+    --header-backgroud: rgb(63, 68, 72);
+    --alternate-color:  rgb(205, 118, 205);
+    --text-color: white;
     --standard-border-radius:50px;
   }
 
@@ -10,39 +11,22 @@
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
+    background-color: var(--header-backgroud);
   }
   
   h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
   }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
+
   header {
     padding: 40px;
     text-align: center;
     background: var(--header-backgroud);
     color: var(--alternate-color);
   }
-  
-  nav {
-    display: flex;
-    background-color: #d8a47f;
-  }
-  
-  nav a {
-    color: var(--header-backgroud);
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  nav a:hover {
-    background-color: var();
+  header p {
+    color: var(--text-color)
   }
   
   main {
@@ -59,10 +43,13 @@
     color: var(--alternate-color);
     margin-top: auto;
   }
+
+  pre {
+    color: var(--text-color);
+  }
   
   .products {
     flex: 1;
-    background-color: var(--alternate-color);
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -70,27 +57,20 @@
   }
   
   .card {
-    border-style: solid;
+    border-style: dashed;
+    border-color: var(--text-color);
     border-width: 1px;
-    border-radius: var(--standard-border-radius);
     padding: 10px;
     flex: 0 0 300px;
-    transform: rotate(8deg);
-    box-shadow: 10px 10px 5px #aaaaaa;
     margin: 20px;
+    color: var(--alternate-color);
   }
-  
-  .card > header {
-    border-radius: var(--standard-border-radius) var(--standard-border-radius) 0px 0px;
-    padding: 20px;
-  }
-  
-  .card > p {
-    text-align: center;
-  }
-  
-  .card > img {
-    width: 100%;
+
+  .inner-card {
+    border-radius: 5px;
+    background: linear-gradient(var(--header-backgroud), var(--alternate-color));
+    flex: 0 0 300px;
+    margin:3px;
   }
   
   @media screen and (max-width: 768px) {
@@ -99,4 +79,3 @@
       flex-direction: column;
     }
   }
-  
