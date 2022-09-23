@@ -5,6 +5,9 @@
     --standard-border-radius:50px;
   }
 
+  * {
+    font-family:sans-serif;
+  }
   body {
     font-size: 16px;
     display: flex;
@@ -46,6 +49,8 @@
 
   pre {
     color: var(--text-color);
+    font-size: 13px;
+    font-family:'Courier New', Courier, monospace
   }
   
   .products {
@@ -66,13 +71,40 @@
     color: var(--alternate-color);
   }
 
+  .card h2 {
+    position: relative;
+    margin-top: -20px;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-radius: 5px;
+    background-color: var(--header-backgroud);
+    border-width: 1px;
+    padding: 3px;
+  }
+
   .inner-card {
     border-radius: 5px;
     background: linear-gradient(var(--header-backgroud), var(--alternate-color));
     flex: 0 0 300px;
     margin:3px;
+    -webkit-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
   }
   
+  .card .h2 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-
+  out;
+  }
+  
+  .card:hover,
+  .card:hover h2 {
+    box-shadow: inset 0px 0px 8px
+  rgba(232, 102, 236, 1), 0 0 15px
+  rgba(232, 102, 236, 1);
+  }
+
   @media screen and (max-width: 768px) {
     main,
     nav {
