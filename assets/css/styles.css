@@ -5,6 +5,7 @@
     --fade-end: rgba(232, 102, 236, .6);
     --text-color: white;
     --standard-border-radius:50px;
+    --margin-size: 10px;
   }
 
   * {
@@ -73,9 +74,9 @@
     border-style: dashed;
     border-color: var(--text-color);
     border-width: 1px;
-    width: 30%;
+    width: calc((100% - 6* var(--margin-size))/3);
     padding: 10px;
-    margin: 1%;
+    margin: var(--margin-size);
     color: var(--alternate-color);
   }
 
@@ -105,12 +106,12 @@
 
   @media screen and (max-width: 992px) {
     .card {
-      width: 45%;
+      width: calc((100% - 4* var(--margin-size))/2);
     }
   }
   
   @media screen and (max-width: 768px) {
     .card {
-      width: 90%;
+      width: calc(100% - 2 * var(--margin-size));
     }
   }
